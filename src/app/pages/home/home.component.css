@@ -44,3 +44,7 @@
     margin-top: 20px; /* Adjust the margin to control the distance between rows and the line */
     margin-bottom: 20px; /* Adjust the margin to control the distance between rows and the line */
   }
+
+  .first-line {
+    text-indent: 1em; 
+  }
