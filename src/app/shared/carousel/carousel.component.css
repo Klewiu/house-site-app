@@ -1,3 +1,10 @@
-.carousel-image{
-    max-height: 600px;
+.c-item{
+ max-height: 700px;
 }
+
+.c-img{
+  object-fit: cover;
+  object-position: center;
+  height: 50vh;
+  overflow: hidden
+   }

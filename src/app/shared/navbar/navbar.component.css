@@ -24,9 +24,9 @@
     display: block;
     position: absolute;
     height: 3px;
-    width: 100%;
-    background: #ac0894;
-    border-radius: 1px;
+    width: 90%;
+    background: var(--secondary-color);
+    border-radius: 13px;
     opacity: 1;
     left: 0;
     transform: rotate(0deg);
@@ -89,4 +89,13 @@
 .language-icon {
     height: 20px;
     opacity: 0.9;
+}
+
+.navbar-brand{
+    color: var(--primary-color);
+    font-weight:bolder;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 40px;
+    text-shadow: 2px 2px 8px #000000;
 }
