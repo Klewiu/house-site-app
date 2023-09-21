@@ -1,1 +1,23 @@
-<p>cookie-popup works!</p>
+<div *ngIf="showPopup" class="modal show d-block" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header cookie-bg">
+                <h5 class="modal-title font-weight-bold">
+                    <i class="bi bi-cookie me-2"></i> <!-- Cookie icon -->
+                    Pliki Cookies
+                </h5>
+            </div>
+            <div class="modal-body cookie-bg">
+                <p class="fs-7">Używamy plików cookies do zapewnienia prawidłowego działania strony. Dodatkowo korzystamy z Google Analytics, aby zrozumieć interakcję użytkowników z naszą stroną. Nie zbieramy żadnych danych osobowych.</p>
+                <p class="fs-6">Klikając "Akceptuj", wyrażasz zgodę na użycie wspomnianych plików cookies. Więcej informacji znajdziesz na stronie <a href="#link-do-polityki-cookies">Polityka Prywatności</a>.</p>
+            </div>
+            <div class="modal-footer cookie-bg justify-content-between"> <!-- Spread buttons apart -->
+                <button type="button" class="btn btn-success" (click)="acceptCookies()">
+                    <i class="bi bi-hand-thumbs-up me-2"></i> <!-- Thumbs-up icon -->
+                    Akceptuj
+                </button>
+                <button type="button" class="btn btn-outline-dark" (click)="rejectCookies()">Odrzuć</button>
+            </div>
+        </div>
+    </div>
+</div>
