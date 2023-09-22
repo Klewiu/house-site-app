@@ -1,0 +1,20 @@
+.image-container img {
+    margin-bottom: 10px;
+  }
+  
+  .col-md-4 {
+    margin-bottom: 20px;
+  }
+
+  .modal-bg{
+    background-color: var(--third-color);
+}
+
+.modal-body img {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 6px 20px rgba(0, 0, 0, 0.23);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .modal-body img:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2), 0px 8px 24px rgba(0, 0, 0, 0.35);
+  }
