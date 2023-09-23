@@ -13,6 +13,9 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { CookiePopupComponent } from './shared/cookie-popup/cookie-popup.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { TermsConditionsComponent } from './pages/terms-conditions/terms-conditions.component';
+
 
 @NgModule({
   declarations: [
@@ -26,11 +29,14 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     HeaderComponent,
     FooterComponent,
     CookiePopupComponent,
-    NavbarComponent
+    NavbarComponent,
+    TermsConditionsComponent,
+  
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
