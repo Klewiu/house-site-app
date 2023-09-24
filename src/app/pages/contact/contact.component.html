@@ -1,8 +1,41 @@
 <div class="container mt-2">
-    <div class="d-flex justify-content-center">
-        <div>
-            <h1>Kontakt:</h1>
-
+      <!-- <h2 class="row justify-content-center font-weight-bold">Dane kontaktowe</h2> -->
+    <div class="row">
+        <div class="col-sm-4 ">
+            <div class="m-2">
+                <h4> <strong>Ammer House Sp. z o.o. </strong></h4>
+                <p class="m-0"> ul. Falenica 23/2</p>
+                <p class="m-0"> 05-802 Warszawa</p>
+                <p class="m-0"> NIP: 111-000-11-00</p>
+            </div>
+            <div class="m-2">
+                <a class="nav-link active" href="telto:+48500083971">
+                    <i style="color: #000000" class="bi bi-telephone m-2"></i>+48 500-083-971</a>
+                <a class="nav-link active" href="mailto:biuro@ammer-house.pl">
+                    <i style="color: #000000" class="bi bi-envelope m-2"></i>biuro@ammer-house.pl</a>
+            </div>
+            <form>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Email</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Wiadomość</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-secondary m-2"> Wyślij </button>
+                </div>
+                
+              </form>
         </div>
-     </div>
+
+        <div class="col-sm-8">
+            <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+                <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                  style="border:0" allowfullscreen></iframe>
+              </div>
+        </div>    
+
+    </div>
 </div>
