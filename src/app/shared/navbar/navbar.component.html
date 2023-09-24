@@ -19,7 +19,8 @@
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Technologia</a>
+          <a class="nav-link" [routerLink]="['/technology']"
+          (click)="collapseNavbar()">Technologia</a>
         </li>
         <li class="nav-item">
           <a
@@ -42,13 +43,17 @@
             Oferta
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Wszystkie domki</a></li>
-            <li><a class="dropdown-item" href="#">Domek 1 - Duch Lasu</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/offer']"
+              (click)="collapseNavbar()">Wszystkie domki</a></li>
+            <li><a class="dropdown-item" [routerLink]="['offer/house-one']"
+              (click)="collapseNavbar()">Domek 1 - Duch Lasu</a></li>
             <li>
-              <a class="dropdown-item" href="#">Domek 2 - Poranna rosa</a>
+              <a class="dropdown-item" [routerLink]="['offer/house-two']"
+              (click)="collapseNavbar()">Domek 2 - Poranna rosa</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">Domek 3 - Zachód słońća</a>
+              <a class="dropdown-item" [routerLink]="['offer/house-three']"
+              (click)="collapseNavbar()">Domek 3 - Zachód słońća</a>
             </li>
           </ul>
         </li>

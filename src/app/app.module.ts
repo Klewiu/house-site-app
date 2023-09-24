@@ -15,6 +15,9 @@ import { CookiePopupComponent } from './shared/cookie-popup/cookie-popup.compone
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TermsConditionsComponent } from './pages/terms-conditions/terms-conditions.component';
+import { HouseOneComponent } from './pages/house-one/house-one.component';
+import { HouseTwoComponent } from './pages/house-two/house-two.component';
+import { HouseThreeComponent } from './pages/house-three/house-three.component';
 
 
 @NgModule({
@@ -31,6 +34,9 @@ import { TermsConditionsComponent } from './pages/terms-conditions/terms-conditi
     CookiePopupComponent,
     NavbarComponent,
     TermsConditionsComponent,
+    HouseOneComponent,
+    HouseTwoComponent,
+    HouseThreeComponent,
   
   ],
   imports: [
