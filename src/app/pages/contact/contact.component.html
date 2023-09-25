@@ -1,5 +1,4 @@
-<div class="container mt-2">
-      <!-- <h2 class="row justify-content-center font-weight-bold">Dane kontaktowe</h2> -->
+<div class="container mt-2 styled-container">
     <div class="row">
         <div class="col-sm-4 contact-frame mb-1">
             <div class="m-2">
@@ -13,30 +12,39 @@
                     <i style="color: #000000" class="bi bi-telephone m-2"></i>+48 500-083-971</a>
                 <a class="nav-link active" href="mailto:biuro@ammer-house.pl">
                     <i style="color: #000000" class="bi bi-envelope m-2"></i>biuro@ammer-house.pl</a>
-            </div>
-            <form>
-                <div class="form-group">
-                  <label for="exampleFormControlInput1">Email</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Podaj swój email">
+           
+            
+            <!-- Button to toggle contact form visibility -->
+            <button class="btn btn-secondary mb-3 mt-2" (click)="toggleContactForm()">
+                {{ buttonLabel }}
+            </button>
+            
+            <!-- Contact form, conditionally rendered -->
+            <form *ngIf="showContactForm" action="https://getform.io/f/8a813b46-c18a-41f2-ac17-de8f4fa8302a" method="POST" class="bg-light p-4 rounded shadow">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Imię</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Podaj swoje imię">
                 </div>
-                <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Wiadomość</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Napisz do nas wiadomość" rows="6"></textarea>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Wprowadź adres email">
                 </div>
-                <div class="text-center">
-                    <button class="btn btn-secondary m-1"> Wyślij </button>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Wiadomość</label>
+                    <textarea name="message" id="message" class="form-control" rows="3" placeholder="Napisz wiadomość"></textarea>
                 </div>
-                
-              </form>
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-outline-success">Wyślij Email</button>
+                </div>
+            </form>
         </div>
-
+    </div>
         <div class="col-sm-8">
             <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
                 <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
                   style="border:0" allowfullscreen></iframe>
-              </div>
+            </div>
         </div>    
-
     </div>
     <br>
 </div>
