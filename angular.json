@@ -4,6 +4,19 @@
   "newProjectRoot": "projects",
   "projects": {
     "house-site-app": {
+      "i18n":{
+        "sourceLocale":"pl",
+        "locales": {
+          "en": {
+            "translation": "src/locale/messages.en.xlf",
+            "baseHref": ""
+          },
+          "de": {
+            "translation": "src/locale/messages.de.xlf",
+            "baseHref": "" 
+          }
+        }
+      },
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,6 +26,10 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize":[
+              "en-US",
+              "de-DE"
+            ],
             "outputPath": "dist/house-site-app",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -34,6 +51,8 @@
           },
           "configurations": {
             "production": {
+              
+
               "budgets": [
                 {
                   "type": "initial",
@@ -48,6 +67,7 @@
               ],
               "outputHashing": "all"
             },
+          
             "development": {
               "buildOptimizer": false,
               "optimization": false,
@@ -55,6 +75,16 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "en": {
+              "localize": ["en"],
+              "outputPath": "dist/under-construction-en/",
+              "i18nMissingTranslation": "error"
+            },
+            "de": {
+              "localize": ["de"],
+              "outputPath": "dist/under-construction-de/",
+              "i18nMissingTranslation": "error"
             }
           },
           "defaultConfiguration": "production"
@@ -62,13 +92,24 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
+
+
             "production": {
               "browserTarget": "house-site-app:build:production"
+            },
+
+            "en": {
+              "browserTarget": "house-site-app:build:en"
+            },
+            "de": {
+              "browserTarget": "house-site-app:build:de"
             },
             "development": {
               "browserTarget": "house-site-app:build:development"
             }
+            
           },
+          
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
