@@ -113,9 +113,15 @@
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "builder": "ng-extract-i18n-merge:ng-extract-i18n-merge",
           "options": {
-            "browserTarget": "house-site-app:build"
+            "browserTarget": "house-site-app:build",
+            "format": "xlf",
+            "outputPath": "src/locale",
+            "targetFiles": [
+              "messages.en.xlf",
+              "messages.de.xlf"
+            ]
           }
         },
         "test": {

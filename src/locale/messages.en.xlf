@@ -261,6 +261,7 @@
       </trans-unit>
       <trans-unit id="3922320475854740936" datatype="html">
         <source>Technologia</source>
+        <target>Technology</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/navbar/navbar.component.html</context>
           <context context-type="linenumber">23</context>
@@ -292,6 +293,7 @@
       </trans-unit>
       <trans-unit id="6662866308609725225" datatype="html">
         <source>Domek 1 - Duch Lasu</source>
+        <target>House 1 - Forest spirit</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/navbar/navbar.component.html</context>
           <context context-type="linenumber">49</context>
@@ -299,6 +301,7 @@
       </trans-unit>
       <trans-unit id="7310390171348543438" datatype="html">
         <source>Domek 2 - Poranna rosa</source>
+         <target>House 2 - Morning dew</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/navbar/navbar.component.html</context>
           <context context-type="linenumber">52</context>
@@ -306,6 +309,7 @@
       </trans-unit>
       <trans-unit id="8221588275765421171" datatype="html">
         <source>Domek 3 - Zachód słońća</source>
+         <target>House 3 - Sunset</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/navbar/navbar.component.html</context>
           <context context-type="linenumber">56</context>
