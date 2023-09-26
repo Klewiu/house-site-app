@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
+  showContactForm = false;
+  buttonLabel = 'Otwórz formularz kontaktowy';
 
+  toggleContactForm() {
+    this.showContactForm = !this.showContactForm;
+    this.buttonLabel = this.showContactForm ? 'Zamknij formularz kontaktowy' : 'Otwórz formularz kontaktowy';
+  }
 }

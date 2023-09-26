@@ -1,26 +1,25 @@
-<div class="container mt-3">
-    <div class="row">
-      <div class="col-12 col-sm-4" *ngFor="let section of sections">
-        <h2>{{ section.title }}</h2>
-        <p>{{ section.text }}</p>
-        <div class="image-container">
-          <img *ngFor="let image of section.images" 
-               [src]="image" 
-               alt="Image" 
-               class="img-fluid" 
-               (click)="open(content, image)">
-        </div>
+<div class="container mt-3 styled-container">
+  <div class="row">
+    <div class="col-12 col-sm-4" *ngFor="let section of sections">
+      <h2>{{ section.title }}</h2>
+      <p>{{ section.text }}</p>
+      <div class="image-container">
+        <img *ngFor="let image of section.images" 
+             [src]="image" 
+             alt="Image" 
+             class="img-fluid" 
+             (click)="open(content, image)">
       </div>
     </div>
   </div>
-  
-  <ng-template #content let-modal>
-    <div class="modal-header modal-bg">
-      <h4 class="modal-title" id="modal-basic-title">Zdjęcie</h4>
-      <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
-    </div>
-    <div class="modal-body modal-bg">
-      <img [src]="selectedImage" class="img-fluid enlarged-image">
-    </div>
-  </ng-template>
-  
+</div>
+
+<ng-template #content let-modal>
+  <div class="modal-header modal-bg">
+    <h4 class="modal-title" id="modal-basic-title">Zdjęcie</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+  </div>
+  <div class="modal-body modal-bg">
+    <img [src]="selectedImage" class="img-fluid enlarged-image">
+  </div>
+</ng-template>
