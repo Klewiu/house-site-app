@@ -16,10 +16,10 @@ const routes: Routes = [
   { path: 'offer', component: OfferComponent },
   { path: 'about-us', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
-  {path: 'terms', component: TermsConditionsComponent},
-  {path: 'offer/house-one', component: HouseOneComponent},
-  {path: 'offer/house-two', component: HouseTwoComponent},
-  {path: 'offer/house-three', component: HouseThreeComponent}
+  { path: 'terms', component: TermsConditionsComponent},
+  { path: 'offer/house-one', component: HouseOneComponent},
+  { path: 'offer/house-two', component: HouseTwoComponent},
+  { path: 'offer/house-three', component: HouseThreeComponent}
 ];
 
 @NgModule({

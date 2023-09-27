@@ -116,46 +116,55 @@
       </trans-unit>
       <trans-unit id="5162686434580248853" datatype="html">
         <source>Start</source>
+        <target>Home</target>
       </trans-unit>
       <trans-unit id="3925337106583791384" datatype="html">
         <source>O nas</source>
+        <target>Über uns</target>
       </trans-unit>
       <trans-unit id="3922320475854740936" datatype="html">
         <source>Technologia</source>
+        <target>Technologie</target>
       </trans-unit>
       <trans-unit id="397497450705980813" datatype="html">
         <source>Kontakt</source>
+        <target>Kontakt</target>
       </trans-unit>
       <trans-unit id="5596676159954278281" datatype="html">
         <source> Oferta </source>
+        <target> Angebot </target>
       </trans-unit>
       <trans-unit id="3005808593577787088" datatype="html">
         <source>Wszystkie domki</source>
+        <target>Alle Holzhäuser</target>
       </trans-unit>
       <trans-unit id="6662866308609725225" datatype="html">
         <source>Domek 1 - Duch Lasu</source>
+        <target>Hütte 1 - Waldgeist</target>
       </trans-unit>
       <trans-unit id="7310390171348543438" datatype="html">
         <source>Domek 2 - Poranna rosa</source>
+        <target>Hütte 2 - Morgentau</target>
       </trans-unit>
       <trans-unit id="8221588275765421171" datatype="html">
         <source>Domek 3 - Zachód słońća</source>
+         <target>Hütte 3 - Sonnenuntergang</target>
       </trans-unit>
       <trans-unit id="2891801995721206954" datatype="html">
         <source>Podaj swój email</source>
-        <target state="new">Podaj swój email</target>
+        <target state="new">Deine E-Mail</target>
       </trans-unit>
       <trans-unit id="8412234484673951965" datatype="html">
         <source>Wiadomość</source>
-        <target state="new">Wiadomość</target>
+        <target state="new">Nachricht</target>
       </trans-unit>
       <trans-unit id="3461655488625544443" datatype="html">
         <source>Napisz do nas wiadomość</source>
-        <target state="new">Napisz do nas wiadomość</target>
+        <target state="new">Der Text Ihrer Nachricht</target>
       </trans-unit>
       <trans-unit id="2240358433907245754" datatype="html">
         <source>Wyślij</source>
-        <target state="new">Wyślij</target>
+        <target state="new">Schicken</target>
       </trans-unit>
     </body>
   </file>
