@@ -132,27 +132,27 @@
       </trans-unit>
       <trans-unit id="5596676159954278281" datatype="html">
         <source> Oferta </source>
-        <target>Services</target>
+        <target> Service </target>
       </trans-unit>
       <trans-unit id="3005808593577787088" datatype="html">
         <source>Wszystkie domki</source>
-        <target>Our Houses</target>
+        <target>All Houses</target>
       </trans-unit>
       <trans-unit id="6662866308609725225" datatype="html">
         <source>Domek 1 - Duch Lasu</source>
-        <target>House 1 - Forest spirit</target>
+        <target>House 1</target>
       </trans-unit>
       <trans-unit id="7310390171348543438" datatype="html">
         <source>Domek 2 - Poranna rosa</source>
-        <target>House 2 - Morning dew</target>
+        <target>House 2</target>
       </trans-unit>
       <trans-unit id="8221588275765421171" datatype="html">
         <source>Domek 3 - Zachód słońća</source>
-        <target>House 3 - Sunset</target>
+        <target>House 3</target>
       </trans-unit>
       <trans-unit id="2891801995721206954" datatype="html">
         <source>Podaj swój email</source>
-        <target state="new">Enter your email</target>
+        <target state="new">Your E-Mail</target>
       </trans-unit>
       <trans-unit id="8412234484673951965" datatype="html">
         <source>Wiadomość</source>
@@ -160,11 +160,11 @@
       </trans-unit>
       <trans-unit id="3461655488625544443" datatype="html">
         <source>Napisz do nas wiadomość</source>
-        <target state="new">Type your message...</target>
+        <target state="new">Write down message</target>
       </trans-unit>
       <trans-unit id="2240358433907245754" datatype="html">
         <source>Wyślij</source>
-        <target state="new">Send message</target>
+        <target state="new">Send</target>
       </trans-unit>
     </body>
   </file>
