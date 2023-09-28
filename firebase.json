@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "target":"house-site-app",
+    "target": "house-site-app",
     "public": "dist/house-site-app/",
     "ignore": [
       "firebase.json",
@@ -15,6 +15,10 @@
       {
         "source": "/en/**",
         "destination": "/en/index.html"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
       }
     ],
     "i18n": {
