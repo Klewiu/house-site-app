@@ -9,10 +9,24 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "pl",
+        "locales": {
+            "en": {
+              "translation":"src/locale/messages.en.xlf"
+            },
+          "de": {
+            "translation":"src/locale/messages.de.xlf"
+           }
+        }
+      },
+      
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize": true,
+            "aot": true,
             "outputPath": "dist/house-site-app",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -33,6 +47,20 @@
             ]
           },
           "configurations": {
+            "en": {
+              "localize": [
+                "en"
+              ],
+              "outputPath": "dist/house-site-app/",
+              "i18nMissingTranslation": "error"
+            },
+            "de": {
+              "localize": [
+                "de"
+              ],
+              "outputPath": "dist/house-site-app/",
+              "i18nMissingTranslation": "error"
+            },
             "production": {
               "budgets": [
                 {
@@ -62,9 +90,16 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
+            "en": {
+              "browserTarget": "house-site-app:build:en"
+            },
+            "de": {
+              "browserTarget": "house-site-app:build:de"
+            },
             "production": {
               "browserTarget": "house-site-app:build:production"
             },
+            
             "development": {
               "browserTarget": "house-site-app:build:development"
             }
@@ -72,9 +107,15 @@
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "builder": "ng-extract-i18n-merge:ng-extract-i18n-merge",
           "options": {
-            "browserTarget": "house-site-app:build"
+            "browserTarget": "house-site-app:build",
+            "format": "xlf",
+            "outputPath": "src/locale",
+            "targetFiles": [
+              "messages.en.xlf",
+              "messages.de.xlf"
+            ]
           }
         },
         "test": {
@@ -93,6 +134,13 @@
               "src/styles.css"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2,
+            "browserTarget": "house-site-app:build:production"
           }
         }
       }

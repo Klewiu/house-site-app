@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ammer-house-ang": {
+      "hosting": {
+        "house-site-app": [
+          "ammer-house-ang"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ammer-house-ang"
+  }
+}
