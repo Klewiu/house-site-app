@@ -25,7 +25,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "localize": true,
+            "localize": false,
             "aot": true,
             "outputPath": "dist/house-site-app",
             "index": "src/index.html",
