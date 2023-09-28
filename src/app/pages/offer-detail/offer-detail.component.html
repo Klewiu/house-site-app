@@ -1,0 +1,55 @@
+<div class="container mt-3 mb-3 styled-container">
+    <h2 class="text-center mb-2">Szczegóły - {{ house.title }} </h2>
+    <div class="row">
+      <!-- Display house details here using the 'house' object -->
+      <div class="col-md-4">
+        <img [src]="house.image" class="img-fluid" alt="House Image">
+      </div>
+      <div class="col-md-8">
+        <p> {{ house.initialText }}</p>
+        <!-- Basic Information table -->
+        <table class="table">
+          <tbody>
+            <tr>
+              <td>Powierzchnia:</td>
+              <td>{{ house.powierzchnia }}</td>
+            </tr>
+            <tr>
+              <td>Wykończenie:</td>
+              <td>{{ house.wykonczenie }}</td>
+            </tr>
+            <tr>
+              <td>Dostępność:</td>
+              <td>{{ house.dostepnosc }}</td>
+            </tr>
+            <tr>
+              <td>Cena:</td>
+              <td>{{ house.cena }}</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Button to toggle Standard Wykończenia -->
+        <button class="btn btn-light mb-3 mx-2" (click)="toggleDetails()">Standard Wykończenia</button>
+        <button class="btn btn btn-outline-dark mb-3" routerLink="/offer">Powrót</button>
+        <!-- Standard Wykończenia table -->
+        <div *ngIf="showDetails">
+          <div class="table-responsive"> <!-- Added responsive table wrapper -->
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Rodzaje Wykończenia</th>
+                  <th *ngFor="let variant of house.variants">{{ variant.type }}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let feature of getFeatures()">
+                  <td>{{ feature }}</td>
+                  <td *ngFor="let variant of house.variants">{{ variant.features[feature] }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

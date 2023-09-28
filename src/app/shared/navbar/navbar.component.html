@@ -43,9 +43,12 @@
             Oferta
           </a>
           <ul class="dropdown-menu">
-            <li><a i18n class="dropdown-item" [routerLink]="['/offer']"
-              (click)="collapseNavbar()">Wszystkie domki</a></li>
-            <li><a i18n class="dropdown-item" [routerLink]="['offer/house-one']"
+            <li>
+              <a i18n class="dropdown-item" [routerLink]="['/offer']"
+              (click)="collapseNavbar()">Wszystkie domki</a>
+            </li>
+            <li>
+              <a i18n class="dropdown-item" [routerLink]="['offer/house-one']"
               (click)="collapseNavbar()">Domek 1 - Duch Lasu</a></li>
             <li>
               <a i18n class="dropdown-item" [routerLink]="['offer/house-two']"
@@ -55,9 +58,21 @@
               <a i18n class="dropdown-item" [routerLink]="['offer/house-three']"
               (click)="collapseNavbar()">Domek 3 - Zachód słońća</a>
             </li>
-          </ul>
-        </li>
-      </ul>
+             <li>
+                <a class="dropdown-item" [routerLink]="['offer/house-four']"
+                (click)="collapseNavbar()">Domek 4 </a>
+              </li>
+              <li>
+                <a class="dropdown-item" [routerLink]="['offer/house-five']"
+                (click)="collapseNavbar()">Domek 5 </a>
+              </li>
+              <li>
+                <a class="dropdown-item" [routerLink]="['offer/house-six']"
+                (click)="collapseNavbar()">Domek 6 </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       <ul class="navbar-nav ms-auto">
         <div class="d-none d-xl-block">
           <li class="nav-item">
