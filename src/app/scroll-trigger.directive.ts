@@ -16,7 +16,7 @@ export class ScrollTriggerDirective {
   onScroll(event: Event): void {
     const scrollY = window.scrollY;
     const navbarHeight = document.querySelector('.navbar')?.clientHeight || 0;
-    const scrollThreshold = navbarHeight * 1; // Adjust the percentage as needed
+    const scrollThreshold = navbarHeight * 0.8; // Adjust the percentage as needed
 
     if (scrollY >= scrollThreshold) {
       // Call the collapseNavbar() function from NavbarComponent
