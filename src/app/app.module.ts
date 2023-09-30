@@ -16,6 +16,7 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TermsConditionsComponent } from './pages/terms-conditions/terms-conditions.component';
 import { OfferDetailComponent } from './pages/offer-detail/offer-detail.component';
+import { ScrollTriggerDirective } from './scroll-trigger.directive';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { OfferDetailComponent } from './pages/offer-detail/offer-detail.componen
     NavbarComponent,
     TermsConditionsComponent,
     OfferDetailComponent,
+    ScrollTriggerDirective,
   
   ],
   imports: [

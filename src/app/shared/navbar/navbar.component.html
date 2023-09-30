@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" appScrollTrigger>
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Ammer House</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,20 +14,26 @@
             class="nav-link"
             href="#"
             [routerLink]="['/about-us']"
-            (click)="collapseNavbar()"
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarNavDropdown"
             >O nas</a
           >
         </li>
         <li class="nav-item">
-          <a i18n class="nav-link" [routerLink]="['/technology']"
-          (click)="collapseNavbar()">Technologia</a>
+          <a i18n 
+            class="nav-link" 
+            [routerLink]="['/technology']"
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarNavDropdown"
+            >Technologia</a>
         </li>
         <li class="nav-item">
           <a i18n
             class="nav-link"
             href="#"
             [routerLink]="['/contact']"
-            (click)="collapseNavbar()"
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarNavDropdown"
             >Kontakt</a
           >
         </li>
@@ -45,30 +51,30 @@
           <ul class="dropdown-menu">
             <li>
               <a i18n class="dropdown-item" [routerLink]="['/offer']"
-              (click)="collapseNavbar()">Wszystkie domki</a>
+              data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">Wszystkie domki</a>
             </li>
             <li>
               <a i18n class="dropdown-item" [routerLink]="['offer/house-one']"
-              (click)="collapseNavbar()">Domek 1 - Duch Lasu</a></li>
+              data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">Domek 1 - Duch Lasu</a></li>
             <li>
               <a i18n class="dropdown-item" [routerLink]="['offer/house-two']"
-              (click)="collapseNavbar()">Domek 2 - Poranna rosa</a>
+              data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">Domek 2 - Poranna rosa</a>
             </li>
             <li>
               <a i18n class="dropdown-item" [routerLink]="['offer/house-three']"
-              (click)="collapseNavbar()">Domek 3 - Zachód słońća</a>
+              data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">Domek 3 - Zachód słońća</a>
             </li>
              <li>
                 <a class="dropdown-item" [routerLink]="['offer/house-four']"
-                (click)="collapseNavbar()">Domek 4 </a>
+                data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">Domek 4 </a>
               </li>
               <li>
                 <a class="dropdown-item" [routerLink]="['offer/house-five']"
-                (click)="collapseNavbar()">Domek 5 </a>
+                data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">Domek 5 </a>
               </li>
               <li>
                 <a class="dropdown-item" [routerLink]="['offer/house-six']"
-                (click)="collapseNavbar()">Domek 6 </a>
+                data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">Domek 6 </a>
               </li>
             </ul>
           </li>
