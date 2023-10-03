@@ -11,3 +11,11 @@
     margin-right: 40px;
     text-shadow: 2px 2px 8px #000000;
 }
+
+.logo-img{
+    width: 200px;
+    margin: 0px;
+    padding: 0px;
+    opacity: 95%;
+    
+}
